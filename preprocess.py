@@ -68,7 +68,7 @@ Make Output Label
 For this problem, we are going to classify if a patient will be admitted in the next 30 days. 
 Therefore, we need to create a variable with the output label (1 = readmitted, 0 = not readmitted).
 '''
-df_adm['OUTPUT_LABEL'] = (df_adm.DAYS_NEXT_ADMIT < 30).astype('int')
+df_adm['OUTPUT_LABEL'] = (df_adm.DAYS_TIL_NEXT_ADMIT < 30).astype('int')
 
 
 # Load NOTEEVENTS Table
